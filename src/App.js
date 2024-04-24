@@ -6,7 +6,7 @@ import { CounterContext } from './Context/Counter';
 import { useState } from 'react';
 
 function App() {
-  const [counter , setCounter] = useState (0);
+  const [counter , setCounter] = useState (5);
   return (
     <BrowserRouter>
     <CounterContext.Provider  value={{counter , setCounter}}>
