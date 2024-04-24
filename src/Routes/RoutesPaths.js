@@ -7,6 +7,7 @@ import Layout from '../Component/Layout';
 import Movie from '../Pages/Movie';
 import MovieDetailes from '../Pages/MovieDetailes';
 import Counter from '../Pages/Counter';
+import Register from '../Pages/Register';
 
 export default function RoutesPaths() {
   return (
@@ -15,10 +16,11 @@ export default function RoutesPaths() {
         <Route index element={<Movie />} />
         <Route path="movies" element={<Movie />} />
         <Route path="add-movie" element={<AddMovie />} />
-        <Route path="movie-details/:id" element={<MovieDetailes />} />
+        <Route path="movieDetails/:id" element={<MovieDetailes />} />
         <Route path="counter" element={<Counter/>} />
       </Route>
       <Route path="contact-us" element={<ContactUs />} />
+      <Route path='register' element={<Register/>}/>
 
       <Route path="*" element={<NotFound />} />
     </Routes>

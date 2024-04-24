@@ -26,6 +26,9 @@ export default function Header() {
           <li className="nav-item">
             <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} style={{color :'white'}}  to="/counter">Counter :{counter}</NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} style={{color :'white'}}  to="/register">Register</NavLink>
+          </li>
         </ul>
       </div>
     </nav>
